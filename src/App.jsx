@@ -1,33 +1,74 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
 import './App.css'
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import Home from './components/Home';
+import Project from './components/Project';
+import About from './components/About';
+import Bedroom from './components/Bedroom';
+import Bathroom from './components/Bathroom';
+import Kitchen from './components/Kitchen';
+import Livingroom from './components/Livingroom';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Router>
+        <header>
+          <h1>Selhano</h1>
+          <nav>
+            <ul>
+
+              <li>
+                <NavLink
+                  to='/'
+                  // className={({ isActive }) => (isActive ? 'active' : '')}
+                >
+                  Home
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to='/project'
+                  // className={({ isActive }) => (isActive ? 'active' : '')}
+                >
+                  Project
+                  
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to='/about'
+                  // className={({ isActive }) => (isActive ? 'active' : '')}
+                >
+                  About
+                </NavLink>
+              </li>
+
+            </ul>
+          </nav>
+        </header>
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route  path='/project/*' element={<Project />}>
+            <Route path='bedroom' element={<Bedroom/>} />
+            <Route path='bathroom' element={<Bathroom/>} />
+            <Route path='kitchen' element={<Kitchen/>} />
+            <Route path='livingroom' element={<Livingroom/>} />          
+          </Route>
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </Router>
+
+
+
+
+
     </>
   )
 }
