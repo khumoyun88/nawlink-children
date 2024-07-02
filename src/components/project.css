@@ -1,0 +1,80 @@
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.titleProject{
+    background-image: url(/public/bcImg1.png);
+}
+
+.rooms ul{
+    width: 80rem;
+    height: auto;
+    margin: auto;
+    margin-block: 2rem;
+    border: 1px solid #CDA274 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+
+    
+}
+
+/* .rooms ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} */
+.rooms ul li{
+    /* width: 16rem;
+    height: 5.5rem; */
+    border-radius: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    color: #000;
+    background-color: inherit;
+    padding: 2rem 6rem;
+
+}
+
+.rooms ul li:hover{
+    color: #fff;
+    background-color: #CDA274;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card{
+    width: 58rem;
+    margin-inline: 2rem;
+}
+.card img{
+    width: 100%;
+
+}
+
+.card h4{
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-block: 4rem 1rem;
+}
+
+.card p{
+    font-size:2.2rem ;
+    font-weight: 400;
+
+}
