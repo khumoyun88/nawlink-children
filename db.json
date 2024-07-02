@@ -1,0 +1,30 @@
+{
+    "bedroom": [
+      { "id": 1, "price": 150, "pictures": ["bedroom1.jpg", "bedroom2.jpg"] },
+      { "id": 2, "price": 200, "pictures": ["bedroom3.jpg", "bedroom4.jpg"] }
+    ],
+    "bathroom": [
+      { "id": 1,
+       "price": 100,
+        "pictures": "https://unsplash.com/photos/white-ceramic-bathtub-PibraWHb4h8" 
+      },
+
+      { "id": 2, 
+      "price": 120, 
+      "pictures": "https://unsplash.com/photos/white-ceramic-bathtub-PibraWHb4h8"
+     }
+    ],
+    "kitchen": [
+      { "id": 1, "price": 250, "pictures": ["kitchen1.jpg", "kitchen2.jpg"] },
+      { "id": 2, "price": 300, "pictures": ["kitchen3.jpg", "kitchen4.jpg"] }
+    ],
+    "livingroom": [
+      { "id": 1,
+       "price": 180, 
+       "pictures":"https://unsplash.com/photos/white-ceramic-bathtub-PibraWHb4h8" },
+      { "id": 2, 
+      "price": 220,
+       "pictures": ["livingroom3.jpg", "livingroom4.jpg"] }
+    ]
+  }
+  

@@ -1,10 +1,13 @@
 import { NavLink , Outlet } from "react-router-dom"
 import './project.css'
+
+
+
+
+
 const Project = () => {
     return(
         <>
-
-
             <div className='title titleProject'>
                 <h1>Our Project</h1>
             </div>
